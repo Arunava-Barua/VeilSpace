@@ -1,0 +1,159 @@
+@use '../../../styles/var.scss';
+.nav{
+    position:fixed;
+    color:white;
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter: blur(100px);
+    height:6.5rem;
+    width:100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.navLeft{
+    margin-left:4.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    gap:6.5rem;
+    list-style: none;
+    .icon{
+        height:2.5rem;
+        width: 2.5rem;
+    }
+}
+.navRight{
+    margin-right:4.5rem;
+    display: flex;
+    justify-content: space-evenly;
+    gap:min(1.5rem , 8vw);
+    list-style: none;
+}
+
+.hamburger{
+    display: none;
+    position:absolute;
+    right:2rem;
+    .menuIcon{
+        font-size: 2.4rem;
+    }
+}
+
+.rightMenu{
+    z-index:-100000;
+    transition: 0.7s ease-in-out;
+    box-sizing: border-box;
+    position:absolute;
+    right: -30vw;
+    display: flex;
+    flex-direction: column;
+    width:30vw;
+    height:100vh;
+    background-color: transparent;
+    top:0;
+    padding:10rem 0 0 3rem;
+    backdrop-filter: blur(100px);
+
+    .cross{
+        position:absolute;
+        top:4.8vw;
+        right:5.2vw;
+        .clearIcon{
+            font-size: 2rem;
+            color:rgb(137, 137, 137);
+        }
+    }
+
+    .wrapper{
+        background-color:transparent;
+        box-sizing: border-box;
+        height:20vh;
+        width:100%;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap:2rem;
+        .menuItem{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap:1.5rem;
+            font-size: 1.2rem;
+            font-weight: 500;
+            .iconWrap{
+                border-radius: 50%;
+                background-color:rgb(14, 133, 133);
+                display: flex;
+                justify-content: center;
+                align-items:center;
+                padding:0.7rem;
+            
+                .icon{
+                    font-size:2rem;
+                    color:whitesmoke;
+                }
+            }
+
+        }
+    }
+    
+}
+
+.slideIn{
+    right:-30vw;
+
+    
+}
+.invisible{
+    visibility: hidden;
+}
+
+
+
+@media only screen and (max-width:1200px){
+    .navLeft{
+        margin-left:2.5rem;
+        gap:3rem;
+    }
+    .navRight{
+        margin-right:2.5rem;
+    }
+
+}
+
+@media only screen and (max-width:1024px){
+    .navLeft{
+        margin-left:3rem;
+        gap:4rem;
+    }
+    .navRight{
+        margin-right:3rem;
+    }
+
+}
+
+@media only screen and (max-width:768px){
+    .slideIn{
+        right:0;
+        
+    }
+    .rightMenu{
+        z-index:+10;
+    }
+    .navLeft{
+        margin-left:2rem;
+        gap:3rem;
+    }
+    .navRight{
+        position:absolute;
+        right:-1000px;
+    }
+    .hamburger{
+        display: block;
+    }
+
+}
+
+
+
+

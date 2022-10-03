@@ -1,0 +1,43 @@
+// .borderWrapper{
+//     background-image: linear-gradient(to bottom,rgba(2, 2, 131,80), rgba(2, 2, 131,0));
+//     width:32rem;
+
+@use '../../../styles/var.scss';
+.searchBar{
+    
+    background-color:transparent;
+    box-sizing: border-box;
+    // background-image: linear-gradient(to bottom,rgba(2, 2, 131,80), rgba(2, 2, 131,0));
+    width:40vw;
+    height:2.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 1rem 0 1rem;
+    backdrop-filter: blur(100px);
+    border:0.1rem solid transparent;
+    border-radius: 0.5rem;
+    border: 1px solid navy;
+
+    // border-image: linear-gradient(to bottom , navy 80% ,transparent) 10% stretch;
+    .input{
+        margin-left:1rem;
+        outline: none;
+        border: none;
+        height:2rem;
+        width:38vw;
+        background-color:transparent;
+        font-weight: 600;
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-width:1200px){
+    .searchBar{
+        width:50vw;
+        .input{
+            margin-left:0;
+            width:44vw;
+        }
+    }
+
+}

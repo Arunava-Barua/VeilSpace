@@ -41,3 +41,14 @@
     }
 
 }
+
+@media only screen and (max-width:768px){
+    .searchBar{
+        width:65vw;
+        .input{
+            margin-left:0;
+            width:60vw;
+        }
+    }
+
+}

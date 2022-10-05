@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../../components/NavigationComponents/Navbar/navbar';
 import Slider from '../../components/UiComponents/Slider/Slider';
+import Categories from './CategoriesSection/Categories';
 import styles from './Home.module.scss';
 import Collection from './NFTCollection/Collection';
 
@@ -17,6 +18,7 @@ function Home(props) {
 
             <Slider />
             <Collection/>
+            <Categories/>
         </div>
     );
 }

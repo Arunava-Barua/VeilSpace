@@ -1,8 +1,9 @@
+@use '../../styles/var.scss';
 .home{
     z-index: 0;;
     box-sizing:border-box;
     background-color: rgb(25, 44, 44);
-    height:200vh;
+    height:300vh;
     width:100vw;
     // display: flex;
     // align-items: center;

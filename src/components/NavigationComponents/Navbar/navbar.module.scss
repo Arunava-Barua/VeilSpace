@@ -2,13 +2,14 @@
 .nav{
     position:fixed;
     color:white;
-    background-color: rgba(255,255,255,0.2);
+    background-color: transparent;
     backdrop-filter: blur(100px);
     height:6.5rem;
     width:100vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 10000;
 
 }
 .navLeft{
@@ -51,7 +52,7 @@
     height:100vh;
     background-color: transparent;
     top:0;
-    padding:10rem 0 0 3rem;
+    padding:10rem 0 0 0;
     backdrop-filter: blur(100px);
 
     .cross{
@@ -65,13 +66,15 @@
     }
 
     .wrapper{
+        padding-left: 3rem;
         background-color:transparent;
         box-sizing: border-box;
-        height:20vh;
-        width:100%;
+        height:fit-content;
+        width:max-content;
         display:flex;
         flex-direction: column;
         justify-content: space-evenly;
+        align-items: flex-start;
         gap:2rem;
         .menuItem{
             display: flex;
@@ -151,6 +154,34 @@
     .hamburger{
         display: block;
     }
+
+}
+
+@media only screen and (max-width:480px){
+    
+    
+    .hamburger{
+        display: block;
+    }
+    .rightMenu{
+        z-index:+10000;
+        width:100vw;
+        position:absolute;
+        right:-100vw;
+        
+    }
+    .wrapper{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .slideIn{
+        right:0;
+    }
+        
+    
 
 }
 

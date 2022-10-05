@@ -1,5 +1,39 @@
 .home{
-    background-color: rgb(7, 8, 8);
-    height:100vh;
+    z-index: 0;;
+    box-sizing:border-box;
+    background-color: rgb(25, 44, 44);
+    height:200vh;
     width:100vw;
+    // display: flex;
+    // align-items: center;
+    // justify-content: center;
+
+
+    .heading{
+        position:absolute;
+        font-size: 3.5rem;
+        color:white;
+        font-weight: 600;
+        line-height: 3.4rem;;
+        top:20vh;
+        left:12vh;
+        gap:0rem;
+        width:max-content;
+        display:flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: center;
+        background-color: rgba(41, 204, 204,0);
+    }
+
+    .subHeading{
+        position:absolute;
+        font-size:1.2rem;
+        font-weight: 400;
+        top:44vh;
+        color:white;
+        left:12vh;
+    }
+
+   
 }

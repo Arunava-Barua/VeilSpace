@@ -1,0 +1,23 @@
+.container{
+    top:50vh;
+    box-sizing: border-box;
+    background-color: transparent;
+    height: 18rem ;
+    width:100vw;
+    overflow: hidden;
+    position:absolute;
+    // padding:2rem;
+}
+//19.3rem
+
+.slider{
+    width:90%;
+}
+.slide{
+    background-color:transparent;
+    height:100%;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}

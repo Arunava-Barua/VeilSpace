@@ -1,2 +1,6 @@
-@use '../../../../styles/var.scss';
+@import  '../../../../styles/var.scss';
+
+.solidBtn{
+    @include solidButton;
+}
 

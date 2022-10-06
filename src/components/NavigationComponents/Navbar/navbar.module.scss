@@ -1,10 +1,10 @@
-@use '../../../styles/var.scss';
+@import '../../../styles/var.scss';
 .nav{
     position:fixed;
-    color:white;
+    color:$secondaryColor;
     background-color: transparent;
     backdrop-filter: blur(100px);
-    height:6.5rem;
+    height:6rem;
     width:100vw;
     display: flex;
     align-items: center;

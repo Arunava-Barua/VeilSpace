@@ -13,6 +13,13 @@ function Home(props) {
                 <div className={styles.heading1}>Explore</div>
                 <div className={styles.heading2}>DAOs</div>
             </div>
+            <div className={styles.lights}>
+                <div className={styles.light1}></div>
+                <div className={styles.light2}></div>
+                <div className={styles.light3}></div>
+            </div>
+            <div className={styles.overlay}>
+            </div>
 
             <div className={styles.subHeading}>Featured</div>
 

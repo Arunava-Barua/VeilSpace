@@ -1,16 +1,57 @@
+$backgroundColor:#070A1B;
+$primaryColor:#38EDF8;
+$secondaryColor:#00D2EF;
+$tertiaryColor:rgba(#0690A9,0.4);
+$iconBorderColor:rgba($secondaryColor , 0.38);
+$outlineColor:#7687E5;
 
-@mixin solidButton{                                                                       
 
-        font-size:1rem;
+
+//Font
+$fontPrimary:'Inter', sans-serif;
+$fontHeading:'Outfit', sans-serif;
+
+//font sizes
+$s1:calc(10.24/16)rem;
+$s2:calc(12.28/16)rem;
+$s3:1rem;
+$s4:calc(20/16)rem;
+$s5:calc(25/16)rem;
+$s6:calc(31.25/16)rem;
+$s7:calc(39.06/16)rem;
+$s8:calc(48.83/16)rem;
+$s9:calc(61.04)rem;
+
+//Font Weights
+$w1:100;
+$w2:200;
+$w3:300;
+$w4:400;
+$w5:500;
+$w6:600;
+$w7:700;
+$w8:800;
+$w9:900;
+
+
+
+
+
+@mixin solidButton{   
+
+        font-family: $fontPrimary;
+        font-size:$s3;
         padding:0.5rem 1.5rem;
-        background-color: navy;
-        color:white;
+        width:fit-content;
+        background-color: $primaryColor;
+        color:$backgroundColor;
         border-radius:0.5rem;
-        border: 0.2rem solid navy;
+        border: 0.2rem solid $primaryColor;
+        font-family: $fontPrimary;
+        font-weight: $w6;
 }
-.solidBtn{
-    @include solidButton;
-}
+
+
 
 @media only screen and (max-width:1200px)
 {

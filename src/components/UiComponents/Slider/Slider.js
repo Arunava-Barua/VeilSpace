@@ -1,11 +1,13 @@
 import { Swiper, SwiperSlide,  } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
-import 'swiper/scss/navigation';
-import 'swiper/scss/pagination';
-import styles from './Slider.module.scss';
+import { Navigation, Pagination } from 'swiper';
+// import 'swiper/scss/navigation';
+// import 'swiper/scss/pagination';
+import '../../../../node_modules/swiper/swiper-bundle.min.css';
+
 // Import Swiper styles
-import 'swiper/css';
+// import 'swiper/css';
 import SliderCard from './SliderCard/SliderCard';
+import styles from './Slider.module.scss';
 
 export default () => {
     return (
@@ -15,7 +17,6 @@ export default () => {
                 spaceBetween={10}
                 slidesPerView={4}
                 navigation
-                pagination={{ clickable: true }}
                 onSlideChange={() => console.log('slide change')}
                 onSwiper={(swiper) => console.log(swiper)}
             >

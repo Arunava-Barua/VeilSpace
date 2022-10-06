@@ -2,7 +2,7 @@
 //     background-image: linear-gradient(to bottom,rgba(2, 2, 131,80), rgba(2, 2, 131,0));
 //     width:32rem;
 
-@use '../../../styles/var.scss';
+@import '../../../styles/var.scss';
 .searchBar{
     
     background-color:transparent;
@@ -15,9 +15,8 @@
     justify-content: space-between;
     padding:0 1rem 0 1rem;
     backdrop-filter: blur(100px);
-    border:0.1rem solid transparent;
     border-radius: 0.5rem;
-    border: 1px solid navy;
+    border: 1px solid $outlineColor;
 
     // border-image: linear-gradient(to bottom , navy 80% ,transparent) 10% stretch;
     .input{
@@ -27,8 +26,11 @@
         height:2rem;
         width:38vw;
         background-color:transparent;
-        font-weight: 600;
-        font-size: 1rem;
+        font-family: $fontPrimary;
+        letter-spacing: 0.1rem;
+        font-weight:$w6;
+        font-size: $s3;
+        color:$secondaryColor;
     }
 }
 @media only screen and (max-width:1200px){

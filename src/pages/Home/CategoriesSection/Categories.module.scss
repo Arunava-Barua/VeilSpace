@@ -26,14 +26,15 @@
 
         }
         .cardWrapper{
+            height:100%;
             box-sizing: border-box;
-            padding:0 2rem 2rem;
+            // padding:0 2rem 2rem;
             background-color: rgb(16, 5, 24);
             display:grid;
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: 1fr 1fr;
-            row-gap:2rem;
-            column-gap:8rem;
+            row-gap:0rem;
+            column-gap:3rem;
             .col{
                 // background-color: chocolate;
             }

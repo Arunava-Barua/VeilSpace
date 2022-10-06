@@ -1,22 +1,21 @@
-@use '../../../../styles/var.scss';
+@import '../../../../styles/var.scss';
 .iconBtn{
 
     height:2.1rem;
     width:2.1rem;
     border-radius:50%;
-    background-color:navy;
-    border: 0.4rem solid rgba(88, 88, 159, 38);
+    background-color:$tertiaryColor;
+    border: 0.4rem solid $iconBorderColor;
     display: flex;
     justify-content: center;
     align-items: center;
     .icon{
-   
         height:1.7rem;
         width:1.7rem;
         display: flex;
         align-items: center;
         justify-content: center;
-        color:white
+        color:$primaryColor;
     }
 
 }

@@ -4,6 +4,8 @@ $secondaryColor:#00D2EF;
 $tertiaryColor:rgba(#0690A9,0.4);
 $iconBorderColor:rgba($secondaryColor , 0.38);
 $outlineColor:#7687E5;
+$darkBackgroundColor:#030511;
+$grayColor:#848484;
 
 
 
@@ -12,15 +14,15 @@ $fontPrimary:'Inter', sans-serif;
 $fontHeading:'Outfit', sans-serif;
 
 //font sizes
-$s1:calc(10.24/16)rem;
-$s2:calc(12.28/16)rem;
+$s1:0.64rem;
+$s2:0.76rem;
 $s3:1rem;
-$s4:calc(20/16)rem;
-$s5:calc(25/16)rem;
-$s6:calc(31.25/16)rem;
-$s7:calc(39.06/16)rem;
-$s8:calc(48.83/16)rem;
-$s9:calc(61.04)rem;
+$s4:1.25rem;
+$s5:1.56rem;
+$s6:1.95rem;
+$s7:2.4rem;
+$s8:3.05rem;
+$s9:3.8rem;
 
 //Font Weights
 $w1:100;
@@ -34,8 +36,18 @@ $w8:800;
 $w9:900;
 
 
+//Mixins
 
+@mixin center{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
 
+@mixin displayImage{
+    width:100%;
+    height:auto;
+}
 
 @mixin solidButton{   
 

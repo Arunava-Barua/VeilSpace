@@ -8,7 +8,7 @@ export default function Categories() {
 
     const cards = data.map((dataItem)=>{
         return <div className={styles.col}>
-            <CategoryCard img = {img} name={dataItem.name} />
+            <CategoryCard img = {dataItem.imgUrl} name={dataItem.name} />
         </div>
     });
 
@@ -16,7 +16,7 @@ export default function Categories() {
         <div className={styles.container}>
             <div className={styles.gridContainer}>
                 <div className={styles.heading}>
-                    Browse By Categories
+                    Browse by Categories
                 </div>
                 <div className={styles.cardWrapper}>
                         {cards}

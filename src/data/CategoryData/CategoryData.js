@@ -1,29 +1,38 @@
 
+import gaming from '../../assets/images/gaming.png'
+import art from '../../assets/images/newArt.jpg';
+import sport from '../../assets/images/football.jpg'
+import karaoke from '../../assets/images/karaoke.png';
+import travel from '../../assets/images/travel.jpg'
+import naruto from '../../assets/images/naruto.jpg';
+
 const data = [
     {
-        imgUrl : '../../../assets/images/gaming.png',
+        imgUrl : gaming,
         name:"Gaming"
     },
     {
-        imgUrl : '../../../assets/images/gaming.png',
-        name:"Gaming"
+        imgUrl : art,
+        name:"Art"
     },
     {
-        imgUrl : '../../../assets/images/gaming.png',
-        name:"Gaming"
+        imgUrl : sport,
+        name:"Sports"
     },
     {
-        imgUrl : '../../../assets/images/gaming.png',
-        name:"Gaming"
+        imgUrl : karaoke,
+        name:"Music"
     },
     {
-        imgUrl : '../../../assets/images/gaming.png',
-        name:"Gaming"
+        imgUrl : travel,
+        name:"Adventure"
     },
     {
-        imgUrl : '../../../assets/images/gaming.png',
-        name:"Gaming"
-    },
+        imgUrl:naruto,
+        name:"Anime"
+
+    }
+
 
 
 ];

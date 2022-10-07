@@ -1,41 +1,49 @@
-@use '../../../styles/var.scss';
-.container{
+@import '../../../styles/var.scss';
+
+.container {
+    
     box-sizing: border-box;
-    position:absolute;
-    width:100%;
-    height:120vh;
-    background-color: rgb(56, 81, 31);
-    top:196vh;
-    padding:4rem 6rem;
-    .gridContainer{
+    position: absolute;
+    width: 100%;
+    height: 150vh;
+    background-color: $backgroundColor;
+    top: 210vh;
+    padding: 4rem 6rem;
+
+    .gridContainer {
         box-sizing: border-box;
         display: grid;
         grid-template-rows: 5fr 50fr;
-        background-color: cadetblue;
-        height:100%;
-        width:100%;
+        background-color: transparent;
+        height: 100%;
+        width: 100%;
 
-        .heading{
+        .heading {
             // padding-left: 2rem;
-            background-color: rgb(48, 79, 69);
-            font-size: 1.6rem;
-            color:white;
-            display:flex;
+            background-color: transparent;
+            font-family: $fontHeading;
+            color: white;
+            font-size: $s7;
+            font-weight: w7;
+            ;
+            display: flex;
             align-items: center;
-            margin:0 0  2rem 0 ;
+            margin: 0 0 2rem 0;
 
         }
-        .cardWrapper{
-            height:100%;
+
+        .cardWrapper {
+            height: 100%;
             box-sizing: border-box;
             // padding:0 2rem 2rem;
             background-color: rgb(16, 5, 24);
-            display:grid;
+            display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: 1fr 1fr;
-            row-gap:0rem;
-            column-gap:3rem;
-            .col{
+            row-gap: 0rem;
+            column-gap: 6rem;
+
+            .col {
                 // background-color: chocolate;
             }
         }

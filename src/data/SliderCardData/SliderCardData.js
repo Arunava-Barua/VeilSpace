@@ -1,6 +1,7 @@
 import art from '../../assets/images/art.png';
+import naruto from '../../assets/images/naruto.jpg'
 const cardData = [{
-    img:art,
+    img:naruto,
     name:'Shades',
 },
 {

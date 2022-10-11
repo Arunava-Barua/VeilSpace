@@ -4,6 +4,7 @@ import Slider from '../../components/UiComponents/Slider/Slider';
 import Categories from './CategoriesSection/Categories';
 import styles from './Home.module.scss';
 import Collection from './NFTCollection/Collection';
+import Icon from '../../assets/CustomIcons/DaoIcon/DaoIcon';
 
 function Home(props) {
     return (
@@ -26,6 +27,7 @@ function Home(props) {
             <Slider />
             <Collection/>
             <Categories/>
+            <Icon/>
         </div>
     );
 }

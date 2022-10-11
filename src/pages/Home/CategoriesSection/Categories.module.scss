@@ -36,16 +36,16 @@
             height: 100%;
             box-sizing: border-box;
             // padding:0 2rem 2rem;
-            background-color: rgb(16, 5, 24);
+            background-color:$backgroundColor;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: 1fr 1fr;
             row-gap: 0rem;
             column-gap: 6rem;
 
-            .col {
-                // background-color: chocolate;
-            }
+            // .col {
+            //     // background-color: chocolate;
+            // }
         }
     }
 
